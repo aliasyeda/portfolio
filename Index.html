@@ -270,7 +270,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
@@ -549,6 +549,15 @@
             transform: translateX(3px);
         }
 
+        .coming-soon {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
         /* Category Sections */
         .category-section {
             margin: 4rem 0;
@@ -587,30 +596,31 @@
 
         .project-card h4 {
             color: var(--text-primary);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 0.5rem;
             font-weight: 600;
+            word-break: break-word;
         }
 
         .project-tech-mini {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
-            margin: 0.8rem 0;
+            margin: 0.5rem 0;
         }
 
         .project-tech-mini span {
             background: rgba(79, 195, 247, 0.1);
             padding: 0.2rem 0.8rem;
             border-radius: 50px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--accent-primary);
             border: 1px solid var(--border-color);
         }
 
         .project-footer {
             margin-top: auto;
-            padding-top: 1rem;
+            padding-top: 0.8rem;
             border-top: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
@@ -620,14 +630,15 @@
         .project-link {
             color: var(--accent-primary);
             text-decoration: none;
-            font-size: 0.9rem;
-            display: flex;
+            font-size: 0.85rem;
+            display: inline-flex;
             align-items: center;
-            gap: 0.3rem;
+            gap: 0.2rem;
         }
 
         .project-link:hover {
             color: var(--text-primary);
+            text-decoration: underline;
         }
 
         /* Certifications Section */
@@ -836,7 +847,7 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">ALIA SAMIA</a>
+            <a href="#" class="logo">SYEDA ALIA SAMIA</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -869,7 +880,7 @@
                 </div>
 
                 <div class="professional-summary">
-                    AI & Machine Learning enthusiast with 44+ projects across Computer Vision, NLP, Generative AI, Data Engineering, Financial Analytics, and Cybersecurity. Experienced in building predictive models, autonomous systems, and end-to-end ML pipelines.
+                    AI & Machine Learning enthusiast with 44+ projects across Generative AI, Deep Learning, Computer Vision, Data Engineering, and Cybersecurity. Experienced in building predictive models, autonomous systems, and end-to-end ML pipelines with a focus on AI-driven security solutions.
                 </div>
                 
                 <div class="cta-buttons">
@@ -884,7 +895,7 @@
                         <div class="stat-label">Projects</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">6</div>
+                        <div class="stat-number">7</div>
                         <div class="stat-label">Internships</div>
                     </div>
                     <div class="stat-item">
@@ -897,49 +908,91 @@
             <div class="hero-visual" style="background: var(--bg-card); border-radius: 20px; padding: 2rem;">
                 <div style="text-align: center;">
                     <span style="font-size: 5rem;">🤖</span>
-                    <h3 style="color: var(--accent-primary);">AI Security Expert</h3>
-                    <p style="color: var(--text-secondary);">44+ Projects • 6 Internships • 9.0 GPA</p>
+                    <h3 style="color: var(--accent-primary);">AI & ML Engineer and AI Security Expert</h3>
+                    <p style="color: var(--text-secondary);">44+ Projects • 7 Internships • 9.0 GPA</p>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- COMPLETE SKILLS SECTION -->
         <section id="skills" class="skills-container">
             <h2 class="section-title">Technical Skills</h2>
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming</h3>
+                    <h3>Programming & Scripting</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Java</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Bash</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Bash Scripting</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>AI/ML Frameworks</h3>
+                    <h3>AI/ML & Data Tools</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Keras</span>
                         <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">OpenCV</span>
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">OpenCV</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data & ML Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Supervised Learning</span>
+                        <span class="skill-tag">Unsupervised Learning</span>
+                        <span class="skill-tag">Regression</span>
+                        <span class="skill-tag">Classification</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Model Evaluation</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Anomaly Detection</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">Autonomous Systems</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cybersecurity Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">OWASP Top 10</span>
+                        <span class="skill-tag">Kali Linux</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3>Specializations</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">Machine Learning</span>
                         <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">Data Engineering</span>
-                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Predictive Modeling</span>
+                        <span class="skill-tag">AI for Cybersecurity</span>
+                        <span class="skill-tag">Self-Healing AI Systems</span>
+                        <span class="skill-tag">Agentic AI</span>
                     </div>
                 </div>
             </div>
@@ -1010,18 +1063,32 @@
                         <li>Built automated reporting dashboards</li>
                     </ul>
                 </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <h3>Cybersecurity Intern</h3>
+                        <span class="internship-badge">AI Security</span>
+                    </div>
+                    <div class="internship-company">Innovate Intern, Hyderabad</div>
+                    <div class="internship-date">Summer 2025</div>
+                    <ul class="internship-list">
+                        <li>Applied ML techniques for anomaly detection in network traffic</li>
+                        <li>Built autonomous security monitoring tools using AI/ML algorithms</li>
+                        <li>Performed data analysis in cybersecurity workflows to identify threat patterns</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- 7 Featured Projects -->
+        <!-- 7 Featured Projects - With Coming Soon for Aegis AI and Sentinel-X -->
         <section id="featured">
             <h2 class="section-title">Flagship Projects</h2>
             
             <div class="featured-grid">
-                <!-- 1. Aegis AI -->
+                <!-- 1. Aegis AI - Coming Soon -->
                 <div class="featured-card">
                     <div class="featured-header">
-                        <h3>Aegis AI - Cyber Defense</h3>
+                        <h3>Aegis AI - Nextgen Autonomous Cyber Defense and Awareness Intelligence Platform</h3>
                         <span class="featured-badge">🛡️ ML Defense</span>
                     </div>
                     <div class="featured-tech">
@@ -1035,14 +1102,14 @@
                         </ul>
                     </div>
                     <div class="featured-links">
-                        <a href="#" class="featured-link">🔗 Coming Soon</a>
+                        <span class="coming-soon">🔗 Coming Soon</span>
                     </div>
                 </div>
 
-                <!-- 2. Sentinel-X -->
+                <!-- 2. Sentinel-X - Coming Soon -->
                 <div class="featured-card">
                     <div class="featured-header">
-                        <h3>Sentinel-X - Self-Healing AI</h3>
+                        <h3>Sentinel-X - Self-Healing Autonomous Cyber Infrastructure</h3>
                         <span class="featured-badge">🚀 Agentic AI</span>
                     </div>
                     <div class="featured-tech">
@@ -1056,14 +1123,14 @@
                         </ul>
                     </div>
                     <div class="featured-links">
-                        <a href="#" class="featured-link">🔗 Coming Soon</a>
+                        <span class="coming-soon">🔗 Coming Soon</span>
                     </div>
                 </div>
 
                 <!-- 3. Phishing Detection -->
                 <div class="featured-card">
                     <div class="featured-header">
-                        <h3>Phishing Detection System</h3>
+                        <h3>Real-Time AI-ML Based Phishing Detection</h3>
                         <span class="featured-badge">🔍 ML Security</span>
                     </div>
                     <div class="featured-tech">
@@ -1077,7 +1144,7 @@
                         </ul>
                     </div>
                     <div class="featured-links">
-                        <a href="https://github.com/aliasyeda/AI-ML-Based-Phishing-Detection-and-Prevention-System" class="featured-link">🔗 GitHub →</a>
+                        <a href="https://github.com/aliasyeda/Real-Time-AI-ML-Based-Phishing-Detection-and-Prevention-System" class="featured-link">🔗 GitHub →</a>
                     </div>
                 </div>
 
@@ -1105,7 +1172,7 @@
                 <!-- 5. Image Classification CNN -->
                 <div class="featured-card">
                     <div class="featured-header">
-                        <h3>Image Classification CNN</h3>
+                        <h3>Deep Learning Project - CNN</h3>
                         <span class="featured-badge">🧠 Deep Learning</span>
                     </div>
                     <div class="featured-tech">
@@ -1126,7 +1193,7 @@
                 <!-- 6. NLP Text Analysis -->
                 <div class="featured-card">
                     <div class="featured-header">
-                        <h3>NLP Text Analysis</h3>
+                        <h3>AI Text Translation & Speech</h3>
                         <span class="featured-badge">📝 NLP</span>
                     </div>
                     <div class="featured-tech">
@@ -1147,7 +1214,7 @@
                 <!-- 7. Song Recommendation System -->
                 <div class="featured-card">
                     <div class="featured-header">
-                        <h3>Song Recommendation System</h3>
+                        <h3>Song Recommendation System - FastAPI</h3>
                         <span class="featured-badge">🎵 FastAPI</span>
                     </div>
                     <div class="featured-tech">
@@ -1161,99 +1228,98 @@
                         </ul>
                     </div>
                     <div class="featured-links">
-                        <a href="#" class="featured-link">🔗 Coming Soon</a>
+                        <a href="https://github.com/aliasyeda/Song-Recommendation-System-FastAPI" class="featured-link">🔗 GitHub →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- All Projects by Category -->
+        <!-- All Projects by Category with COMPLETE GITHUB LINKS -->
         <section id="projects">
             <h2 class="section-title">All Projects (44+)</h2>
 
-            <!-- I. Computer Vision & Image Processing (8 Projects) -->
+            <!-- 🚀 1. Generative AI & Natural Language Processing (NLP) -->
             <div class="category-section">
-                <h3 class="category-title">📸 Computer Vision & Image Processing (8)</h3>
+                <h3 class="category-title">🚀 Generative AI & NLP (10)</h3>
                 <div class="projects-grid">
-                    <div class="project-card"><h4>Real-time Face Detection</h4><div class="project-tech-mini"><span>OpenCV</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Real-Time-Face-Detection-using-OpenCV" class="project-link" target="_blank">View →</a></div></div>
-                    <div class="project-card"><h4>Facial Emotion Recognition</h4><div class="project-tech-mini"><span>Deep Learning</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Flower Classification</h4><div class="project-tech-mini"><span>ML/DL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Secure Vision AI</h4><div class="project-tech-mini"><span>Encryption</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Breast Cancer Detection</h4><div class="project-tech-mini"><span>Healthcare</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Diabetes Prediction</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Multiple Disease Project</h4><div class="project-tech-mini"><span>Diagnostic</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Multiple-Disease-prediction-project" class="project-link" target="_blank">View →</a></div></div>
-                    <div class="project-card"><h4>Draws/Graphics System</h4><div class="project-tech-mini"><span>Graphics</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
+                    <div class="project-card"><h4>Prompt-Engineering-with-ChatGPT</h4><div class="project-tech-mini"><span>Private</span></div><div class="project-footer"><span class="project-link">Private Repo</span></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-Breast-Cancer-Detection-GenAI</h4><div class="project-tech-mini"><span>GenAI</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-Breast-Cancer-Detection-GenAI" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-Titanic-Survival-Prediction-with-Generative-AI-</h4><div class="project-tech-mini"><span>GenAI</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-Titanic-Survival-Prediction-with-Generative-AI-" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SystemTron-GenerativeAI-Movie-Rating-Predictor</h4><div class="project-tech-mini"><span>GenAI</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SystemTron-GenerativeAI-Movie-Rating-Predictor" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>AI-NLP-CustomerSupport-Chatbot</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/AI-NLP-CustomerSupport-Chatbot" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Resume-skill-extractor-NLP</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Resume-skill-extractor-NLP" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>AI-Text-Translation-Speech</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/AI-Text-Translation-Speech" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODECLAUSEINTERNSHIP-Natural-Language-Processing-for-Legal-Documents</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODECLAUSEINTERNSHIP-Natural-Language-Processing-for-Legal-Documents" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODECLAUSEINTERNSHIP-Basic-Speech-Recognition</h4><div class="project-tech-mini"><span>Speech</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODECLAUSEINTERNSHIP-Basic-Speech-Recognition" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>AI-Reality-Debugger</h4><div class="project-tech-mini"><span>AI</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/AI-Reality-Debugger" class="project-link">🔗 View</a></div></div>
                 </div>
             </div>
 
-            <!-- II. Generative AI & Advanced NLP (8 Projects) -->
+            <!-- 🧠 2. Supervised & Deep Learning Models -->
             <div class="category-section">
-                <h3 class="category-title">🤖 Generative AI & Advanced NLP (8)</h3>
+                <h3 class="category-title">🧠 Supervised & Deep Learning (14)</h3>
                 <div class="projects-grid">
-                    <div class="project-card"><h4>GenAI IPL Winning Team Predictor</h4><div class="project-tech-mini"><span>GenAI</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Generative Movie Rating Predictor</h4><div class="project-tech-mini"><span>GenAI</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>NLP for Legal Documents</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Resume Skill Extractor</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Resume-skill-extractor-NLP" class="project-link" target="_blank">View →</a></div></div>
-                    <div class="project-card"><h4>Text Translation System</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/AI-Text-Translation-Speech" class="project-link" target="_blank">View →</a></div></div>
-                    <div class="project-card"><h4>Speech Reality Debugger</h4><div class="project-tech-mini"><span>Speech</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Basic Speech Recognition</h4><div class="project-tech-mini"><span>Speech</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Customer Support Chatbot</h4><div class="project-tech-mini"><span>Chatbot</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
+                    <div class="project-card"><h4>Deep-learning-project</h4><div class="project-tech-mini"><span>Deep Learning</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Deep-learning-project" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>XOR-mlp-perceptron-python</h4><div class="project-tech-mini"><span>MLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/XOR-mlp-perceptron-python" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Perceptron-Pass-Fail-Prediction</h4><div class="project-tech-mini"><span>Perceptron</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Perceptron-Pass-Fail-Prediction" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Multiple-Disease-prediction-project</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Multiple-Disease-prediction-project" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SystemTron-DiabetesPredictionSystem</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SystemTron-DiabetesPredictionSystem" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-BankSubscriptionPrediction-RandomForestDecisionTree</h4><div class="project-tech-mini"><span>Random Forest</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-BankSubscriptionPrediction-RandomForestDecisionTree" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODSOFT-CustomerChurnPrediction</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-CustomerChurnPrediction" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODSOFT-SPAM_SMS_DETECTION</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-SPAM_SMS_DETECTION" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-Car-Price-Predictor</h4><div class="project-tech-mini"><span>Regression</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-Car-Price-Predictor" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-IRIS-flower-classification-ml</h4><div class="project-tech-mini"><span>Classification</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-IRIS-flower-classification-ml" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODECLAUSEINTERNSHIP-Personality-Prediction-AI</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODECLAUSEINTERNSHIP-Personality-Prediction-AI" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODSOFT-CreditCardFraudDetection</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-CreditCardFraudDetection" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODSOFT-MOVIE-GENRE-CLASSIFICATION</h4><div class="project-tech-mini"><span>Classification</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-MOVIE-GENRE-CLASSIFICATION" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>OPTIMIZATION-MODEL</h4><div class="project-tech-mini"><span>Optimization</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/OPTIMIZATION-MODEL" class="project-link">🔗 View</a></div></div>
                 </div>
             </div>
 
-            <!-- III. Data Engineering & SQL Architecture (10 Projects - Added Tradecart_DB) -->
+            <!-- 👁️ 3. Computer Vision & Security AI -->
             <div class="category-section">
-                <h3 class="category-title">🗄️ Data Engineering & SQL Architecture (10)</h3>
+                <h3 class="category-title">👁️ Computer Vision & Security AI (8)</h3>
                 <div class="projects-grid">
-                    <div class="project-card"><h4>Enterprise Data Migration System</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>MySQL Backup & Recovery Utility</h4><div class="project-tech-mini"><span>MySQL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Advanced SQL Data Analysis</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Relational Joins Optimization</h4><div class="project-tech-mini"><span>MySQL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Credit Card Database System</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Rental Agency Database System</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Data Pipeline Development</h4><div class="project-tech-mini"><span>ETL</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>End-to-End Data Science Project</h4><div class="project-tech-mini"><span>Full Stack</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Name and Address System</h4><div class="project-tech-mini"><span>Database</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Tradecart_DB</h4><div class="project-tech-mini"><span>SQL</span><span>Database</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
+                    <div class="project-card"><h4>Real-Time-Face-Detection-Using-OpenCV</h4><div class="project-tech-mini"><span>OpenCV</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Real-Time-Face-Detection-Using-OpenCV" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SecureVision-AI_Image-Encryption-and-Classification</h4><div class="project-tech-mini"><span>Vision AI</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SecureVision-AI_Image-Encryption-and-Classification" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Real-Time-AI-ML-Based-Phishing-Detection-and-Prevention-System</h4><div class="project-tech-mini"><span>Security</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Real-Time-AI-ML-Based-Phishing-Detection-and-Prevention-System" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODECLAUSEINTERNSHIP-Facial-Emotions-Detection</h4><div class="project-tech-mini"><span>Computer Vision</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODECLAUSEINTERNSHIP-Facial-Emotions-Detection" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Security-Identification-Project-SYSTEMTRON</h4><div class="project-tech-mini"><span>Security</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Security-Identification-Project-SYSTEMTRON" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Systemtron-Vulnerability-Assessment</h4><div class="project-tech-mini"><span>Security</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Systemtron-Vulnerability-Assessment" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>PYWEEK_SUBMISSION</h4><div class="project-tech-mini"><span>Python</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/PYWEEK_SUBMISSION" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>portfolio</h4><div class="project-tech-mini"><span>Web</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/portfolio" class="project-link">🔗 View</a></div></div>
                 </div>
             </div>
 
-            <!-- IV. Financial & Predictive Analytics (8 Projects) -->
+            <!-- 📊 4. Data Engineering & SQL Analytics -->
             <div class="category-section">
-                <h3 class="category-title">📊 Financial & Predictive Analytics (8)</h3>
+                <h3 class="category-title">📊 Data Engineering & SQL (11)</h3>
                 <div class="projects-grid">
-                    <div class="project-card"><h4>Credit Card Fraud Detection</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Bank Subscription Prediction</h4><div class="project-tech-mini"><span>Random Forest</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Customer Churn Prediction</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Car Price Predictor</h4><div class="project-tech-mini"><span>Regression</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Titanic Survival Prediction</h4><div class="project-tech-mini"><span>Classification</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Spam SMS Detection</h4><div class="project-tech-mini"><span>NLP</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Retention & Prevention System</h4><div class="project-tech-mini"><span>AI</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Ability Assessment System</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
+                    <div class="project-card"><h4>Data-Pipeline-Development</h4><div class="project-tech-mini"><span>ETL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Data-Pipeline-Development" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>END-TO-END-DATA-SCIENCE-PROJECT</h4><div class="project-tech-mini"><span>Data Science</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/END-TO-END-DATA-SCIENCE-PROJECT" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Advanced-SQL-Data-Analysis</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Advanced-SQL-Data-Analysis" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>AI-Enhanced-SQL-Query-System</h4><div class="project-tech-mini"><span>AI + SQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/AI-Enhanced-SQL-Query-System" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>TradeCart_DB</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/TradeCart_DB" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Rental-agency-database-system</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Rental-agency-database-system" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Enterprise-data-migration-sql</h4><div class="project-tech-mini"><span>SQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Enterprise-data-migration-sql" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Mysql-backup-recovery-utility</h4><div class="project-tech-mini"><span>MySQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Mysql-backup-recovery-utility" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>Relational-Joins-With-MySQL</h4><div class="project-tech-mini"><span>MySQL</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Relational-Joins-With-MySQL" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-IPLWinningTeamPredictor-Streamlit-App</h4><div class="project-tech-mini"><span>Streamlit</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-IPLWinningTeamPredictor-Streamlit-App" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SystemTron-Analog-Digital-Clock</h4><div class="project-tech-mini"><span>Utility</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SystemTron-Analog-Digital-Clock" class="project-link">🔗 View</a></div></div>
                 </div>
             </div>
 
-            <!-- V. Machine Learning Logic & Optimization (6 Projects) -->
+            <!-- 🛠️ 5. Applications, Games & Specialized Tools -->
             <div class="category-section">
-                <h3 class="category-title">⚙️ ML Logic & Optimization (6)</h3>
+                <h3 class="category-title">🛠️ Applications & Games (7)</h3>
                 <div class="projects-grid">
-                    <div class="project-card"><h4>Song Recommendation System</h4><div class="project-tech-mini"><span>FastAPI</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Perceptron Password Prediction</h4><div class="project-tech-mini"><span>XY MLP</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Optimization Models</h4><div class="project-tech-mini"><span>Optimization</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Movie Genre Classification</h4><div class="project-tech-mini"><span>Optimization</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-MOVIE-GENRE-CLASSIFICATION" class="project-link" target="_blank">View →</a></div></div>
-                    <div class="project-card"><h4>Deep Learning Projects Suite</h4><div class="project-tech-mini"><span>Deep Learning</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Deep-learning-project" class="project-link" target="_blank">View →</a></div></div>
-                    <div class="project-card"><h4>Personality Prediction AI</h4><div class="project-tech-mini"><span>ML</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                </div>
-            </div>
-
-            <!-- VI. Games, Utilities & Logic (4 Projects) -->
-            <div class="category-section">
-                <h3 class="category-title">🎮 Games & Utilities (4)</h3>
-                <div class="projects-grid">
-                    <div class="project-card"><h4>Snake Game</h4><div class="project-tech-mini"><span>Python</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Tic Tac Toe</h4><div class="project-tech-mini"><span>Python</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Connect Four</h4><div class="project-tech-mini"><span>Game</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
-                    <div class="project-card"><h4>Unlock Digital Clock</h4><div class="project-tech-mini"><span>Utility</span></div><div class="project-footer"><a href="#" class="project-link">🔗</a></div></div>
+                    <div class="project-card"><h4>Song-Recommendation-System-FastAPI</h4><div class="project-tech-mini"><span>FastAPI</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/Song-Recommendation-System-FastAPI" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SystemTRON-Connect-Four-Game</h4><div class="project-tech-mini"><span>Game</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SystemTRON-Connect-Four-Game" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-Snake-Game-in-Python</h4><div class="project-tech-mini"><span>Game</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-Snake-Game-in-Python" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>SYSTEMTRON-Tic-Tac-Toe-Python</h4><div class="project-tech-mini"><span>Game</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/SYSTEMTRON-Tic-Tac-Toe-Python" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODSOFT-CreditCardFraudDetection</h4><div class="project-tech-mini"><span>Fraud Detection</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-CreditCardFraudDetection" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>CODSOFT-MOVIE-GENRE-CLASSIFICATION</h4><div class="project-tech-mini"><span>Classification</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/CODSOFT-MOVIE-GENRE-CLASSIFICATION" class="project-link">🔗 View</a></div></div>
+                    <div class="project-card"><h4>PYWEEK_SUBMISSION</h4><div class="project-tech-mini"><span>Python</span></div><div class="project-footer"><a href="https://github.com/aliasyeda/PYWEEK_SUBMISSION" class="project-link">🔗 View</a></div></div>
                 </div>
             </div>
         </section>
@@ -1305,7 +1371,7 @@
         </section>
 
         <footer>
-            <p>© 2025 Syeda Alia Samia | 44+ Projects • 6 Internships • 9.0 GPA</p>
+            <p>© 2025 Syeda Alia Samia | 44+ Projects • 7 Internships • 9.0 GPA</p>
         </footer>
     </div>
 </body>
